@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REST Countries API</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/1c987ffdab.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header-container">
+    <div class="header">
+      <h2>Where in the world?</h2>
+      <div class="label">
+        <label>
+          <i class="fas fa-moon fa-lg"></i>
+          <input type='checkbox'>
+        </label>
+        <span>Dark Mode</span>
+    </div>
+
+    </div>
+  </div>
+  <div class="searchbar-container">
+    <div class="searchbar">
+      <div class="search-country">
+        <form>
+          <i class="fas fa-search fa-lg"></i>
+          <input type="text" placeholder=" Search for a country..." name='search'>
+        </form>
+      </div>
+      <div class="filter-region">
+        <div class="custom-select">
+          <select>
+            <option disabled selected hidden value='filter-by-region'> Filter by Region</option>
+            <option value="all"> All</option>
+            <option value="asia">Asia</option>
+            <option value="americas">Americas</option>
+            <option value="africa">Africa</option>
+            <option value="europe">Europe</option>
+            <option value="oceania">Oceania</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main class='grid-container'>
+  </main>
+  <div class="detailed-info-container d-none">
+    <div class="back-btn-parent">
+      <button class='back-btn'>
+        <i class="fas fa-long-arrow-alt-left"></i>
+        Back</button>
+    </div>
+
+    <div class='detailed-info-parent d-none'>
+      <img class='detailed-info-img' src="https://restcountries.eu/data/col.svg" alt="">
+      <div class='detailed-info'>
+        <h1>Belgium</h1>
+        <div class="info-container">
+          <div class="info-tab-1">
+            <p>Native Name: Belgie</p>
+            <p>Population: 11,319,511</p>
+            <p>Region: Europe</p>
+            <p>Sub Region: Western Europe</p>
+            <p>Capital: Brussels</p>
+          </div>
+          <div class="info-tab-2">
+            <p>Top Level Domain: be</p>
+            <p>Currencies: Euro</p>
+            <p>Languages: Dutch, French, German</p>
+          </div>
+        </div>
+        <div class="border-countries"></div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
