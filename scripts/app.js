@@ -209,10 +209,9 @@ const displayDetailedInfo = async (countryName) => {
     Array.from(main.children)
       .forEach(child => {
         const name = child.getAttribute('name') // 3no. country code
-
+        
         if(name === countryData.borders[i]){
           const countryName = child.lastElementChild.firstElementChild.textContent;
-          console.log(countryName);
           button.textContent = countryName;
         }
       })
